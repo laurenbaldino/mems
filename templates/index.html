@@ -1,36 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Mems</title>
-  <meta name="description" content="Our Dating App!">
-  <meta name="author" content="Lauren and Cam">
+    <title>Mems</title>
+    <meta name="description" content="Our Dating App!" />
+    <meta name="author" content="Lauren and Cam" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.4/dist/css/uikit.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Pacifico&display=swap" rel="stylesheet">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.4.4/dist/css/uikit.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body style="background-color: white">
-  <nav class="uk-navbar-container uk-margin" uk-navbar style="padding-top: 10px;">
-    <div class="uk-navbar-center">
-        <div class="uk-navbar-center-left"><div>
+  <body style="background-color: white">
+    <nav
+      class="uk-navbar-container uk-margin"
+      uk-navbar
+      style="padding-top: 10px;"
+    >
+      <div class="uk-navbar-center">
+        <div class="uk-navbar-center-left">
+          <div>
             <ul class="uk-navbar-nav">
-                <li ><a href="explore.html" style="font-family: 'Coming Soon', cursive; font-size: larger; color: black;">Explore Dates</a></li>
+              <li>
+                <a
+                  href="/explore"
+                  style="font-family: 'Coming Soon', cursive; font-size: larger; color: black;"
+                  >Explore Dates</a
+                >
+              </li>
             </ul>
-        </div></div>
-        <a class="uk-navbar-item uk-logo" href="index.html" style="font-family: 'Pacifico', cursive; font-size: 50px; color: black;">Mems</a>
-        <div class="uk-navbar-center-right"><div>
+          </div>
+        </div>
+        <a
+          class="uk-navbar-item uk-logo"
+          href="/"
+          style="font-family: 'Pacifico', cursive; font-size: 50px; color: black;"
+          >Mems</a
+        >
+        <div class="uk-navbar-center-right">
+          <div>
             <ul class="uk-navbar-nav">
-                <li><a href="profile.html" style="font-family: 'Coming Soon', cursive; font-size: larger; color: black;">My Profile</a></li>
+              <li>
+                <a
+                  href="/profile"
+                  style="font-family: 'Coming Soon', cursive; font-size: larger; color: black;"
+                  >My Profile</a
+                >
+              </li>
             </ul>
-        </div></div>
-    </div>
-  </nav>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="js/navbar.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.4/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.4/dist/js/uikit-icons.min.js"></script>
-</body>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div>{% block content %}{% endblock %}</div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.4/dist/js/uikit-icons.min.js"></script>
+  </body>
 </html>
