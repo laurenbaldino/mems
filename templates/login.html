@@ -2,5 +2,36 @@
 
 <div class="uk-flex uk-flex-middle uk-flex-column">
     Login page
+    <form action="handle_login" method="POST">
+        <div class="uk-margin">
+            <div class="uk-inline">
+                <span class="uk-form-icon" uk-icon="icon: user"></span>
+                <input class="uk-input" type="text" name="username_input">
+            </div>
+        </div>
+    
+        <div class="uk-margin">
+            <div class="uk-inline">
+                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                <input class="uk-input" type="text" disabled>
+            </div>
+        </div>
+        <div class="uk-flex uk-flex-middle uk-flex-column">
+            <button class="uk-button uk-button-default uk-button-small" type="submit">Login</button>
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 {% endblock %}

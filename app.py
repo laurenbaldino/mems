@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, Integer, String
 
@@ -25,6 +25,15 @@ def explore():
 def login():
     return render_template('login.html')
 
+@app.route('/handle_login', methods=['POST'])
+def handle_login():
+    from models.User import User
+    
+    username = request.form['username_input']
+    user = User.query.filter_by(email = username).first()
+    if user:
+        return "Logged in"
+    return "username invalid"
 
 @app.route('/profile')
 def profile():
