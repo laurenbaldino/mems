@@ -6,8 +6,11 @@ name = "pypi"
 [packages]
 gunicorn = "*"
 Flask = "*"
+sqlalchemy = "*"
+flask-sqlalchemy = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.6"
+python_version = "3.7.3"
